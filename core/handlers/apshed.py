@@ -10,7 +10,7 @@ from apscheduler_di import ContextSchedulerDecorator
 
 jobstores = {
     'default': RedisJobStore(jobs_key='dispatched_trips_jobs', run_times_key='dispatched_trips_running',
-                             host='172.20.147.45', db=2, port=6379)
+                             host='localhost', db=2, port=6379)
 }
 scheduler = ContextSchedulerDecorator(AsyncIOScheduler(timezone='Europe/Moscow', jobstores=jobstores))
 
