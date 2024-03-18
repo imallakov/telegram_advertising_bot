@@ -18,7 +18,7 @@ from core.keyboards.inline_keyboards import chats_choice, chosen_chat, inline_ca
     markirovka_reklamy, check_organisation_name_by_inn
 from core.keyboards.callbackdata import ChatsCallback, CalendarCallback, TariffCallback
 
-storage = RedisStorage.from_url("redis://172.20.147.45:6379/0")
+storage = RedisStorage.from_url("redis://localhost:6379/0")
 
 advert_fsm_router = Router()
 
